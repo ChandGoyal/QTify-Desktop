@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 270px;
+    background-color: var(--css-black);
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    color: var(--css-white);
+    text-align: center;
+}
+
+.img-frame{
+    width: 212px;
+    height: 212px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
