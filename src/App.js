@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <HeroSection heading1="100 Thousand Songs, add-free" heading2="Over thousands podcast episodes"/>
+      <HeroSection heading1="100 Thousand Songs, ad-free" heading2="Over thousands podcast episodes"/>
     </div>
   )
 }
