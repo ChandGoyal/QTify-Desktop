@@ -5,4 +5,5 @@
     background-color: var(--css-primary);
     align-items: center;
     justify-content: space-between;
+    padding: 0px 32px;
 }
