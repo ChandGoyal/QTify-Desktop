@@ -11,7 +11,7 @@ function HeroSection({heading1, heading2}) {
           <h2>{heading2}</h2>
         </div>
         <div className={styles['img-frame']}>
-          <img src={HeroImage} alt="Hero Banner" />
+          <img src={HeroImage} alt="Headphones" />
         </div>
       </div>
     </section>

@@ -23,6 +23,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--css-black);
   color: var(--css-white);
+  overflow: hidden;
+  overflow-y: scroll;
 }
 img,
 picture,
@@ -50,4 +52,14 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+.swiper-slide{
+  width: auto !important;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
