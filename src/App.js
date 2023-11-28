@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import HeroSection from './components/HeroSection/HeroSection.jsx';
 import { Outlet } from 'react-router-dom';
 import { StyledEngineProvider } from '@mui/material';
-import { fetchNewAlbums, fetchTopAlbums } from './api/api.js';
+import { fetchNewAlbums, fetchSongs, fetchTopAlbums } from './api/api.js';
 
 function App() {
 
@@ -20,9 +20,10 @@ function App() {
   useEffect(() => {
     generateData("topAlbums", fetchTopAlbums)
     generateData("newAlbums", fetchNewAlbums)
+    generateData("songs", fetchSongs)
   }, [])
 
-  const {topAlbums= [], newAlbums= []} = data;
+  const { topAlbums = [], newAlbums = [], songs = [] } = data;
 
 
   return (
@@ -30,7 +31,7 @@ function App() {
       <StyledEngineProvider injectFirst>
       <Navbar />
       <HeroSection heading1="100 Thousand Songs, ad-free" heading2="Over thousands podcast episodes"/>
-      <Outlet context={{data : {topAlbums,newAlbums} }} />
+      <Outlet context={{data : { topAlbums, newAlbums, songs } }} />
       </StyledEngineProvider>
     </div>
   )
